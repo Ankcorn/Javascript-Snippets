@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<body>
+<canvas id="myCanvas" width="300" height="300"></canvas>
+<script>
+    var c = document.getElementById('myCanvas');
+    var ctx = c.getContext("2d");
+    drawHead()
+    drawLeftEye()
+    drawRightEye()
+    drawNose()
+    
+
+ function drawHead(){
+    ctx.beginPath()
+    ctx.arc(150,150,100,0,2*Math.PI)
+    ctx.stroke();
+ }
+
+ function drawLeftEye(){
+        ctx.beginPath()
+        ctx.arc(125,125,10,0,2*Math.PI)
+        ctx.stroke()
+    }
+  function  drawRightEye(){
+        ctx.beginPath()
+        ctx.arc(175,125,10,0,2*Math.PI)
+        ctx.stroke();
+    }
+  function drawNose(){
+      ctx.beginPath()
+      ctx.arc(150,150,20,1.5*Math.PI,0.5*Math.PI)
+      ctx.stroke()
+  }  
+
+  function drawMouth(){
+      
+  }
+</script>
+</body>
+</html>
